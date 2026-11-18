@@ -1,0 +1,144 @@
+{
+  "verdict_1S": "1S is worse than 1A: a penalty on meaningless labels hurts, so the 1B gain is not a generic regularisation effect.",
+  "verdict_1E": {
+    "1E w=1 (embedding, no link penalty)": "1E w=1 (embedding, no link penalty): reaches the separation of 1B on training nodes (silhouette 0.43 against 0.30) and shows no gain, so separation alone is not sufficient to produce the 1B gain.",
+    "1E w=5 (embedding, no link penalty)": "1E w=5 (embedding, no link penalty): reaches the separation of 1B on training nodes (silhouette 0.42 against 0.30) and shows no gain, so separation alone is not sufficient to produce the 1B gain."
+  },
+  "arms": {
+    "1A (no constraint)": {
+      "f1_gain_vs_1A": {
+        "mean_diff": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "dz": null,
+        "wins": 0,
+        "n": 8,
+        "t_p": null,
+        "w_p": 1.0
+      },
+      "ap_gain_vs_1A": {
+        "mean_diff": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "dz": null,
+        "wins": 0,
+        "n": 8,
+        "t_p": null,
+        "w_p": 1.0
+      },
+      "sil_train": 0.161782905459404,
+      "sil_test": -0.06744407396763563,
+      "link_auc": 0.6965601169931714
+    },
+    "1S (shuffled labels)": {
+      "f1_gain_vs_1A": {
+        "mean_diff": -0.03707830700601932,
+        "ci_lo": -0.05640992987454532,
+        "ci_hi": -0.01774668413749332,
+        "dz": -1.6034991271276136,
+        "wins": 0,
+        "n": 8,
+        "t_p": 0.002682432893959261,
+        "w_p": 0.0078125
+      },
+      "ap_gain_vs_1A": {
+        "mean_diff": -0.006578609964374538,
+        "ci_lo": -0.03583562104016803,
+        "ci_hi": 0.02267840111141895,
+        "dz": -0.18798419124943508,
+        "wins": 4,
+        "n": 8,
+        "t_p": 0.6113834713630812,
+        "w_p": 0.7421875
+      },
+      "sil_train": 0.15332200191915035,
+      "sil_test": -0.07270673662424088,
+      "link_auc": 0.6253048641159366
+    },
+    "1E w=1 (embedding, no link penalty)": {
+      "f1_gain_vs_1A": {
+        "mean_diff": -0.023953852340513483,
+        "ci_lo": -0.0637726610105039,
+        "ci_hi": 0.01586495632947693,
+        "dz": -0.5029261893862411,
+        "wins": 2,
+        "n": 8,
+        "t_p": 0.19788005858893296,
+        "w_p": 0.25
+      },
+      "ap_gain_vs_1A": {
+        "mean_diff": 0.016919179819500557,
+        "ci_lo": -0.008145022828962612,
+        "ci_hi": 0.04198338246796372,
+        "dz": 0.5643422415747571,
+        "wins": 6,
+        "n": 8,
+        "t_p": 0.15447470598051002,
+        "w_p": 0.1484375
+      },
+      "sil_train": 0.426659420132637,
+      "sil_test": -0.031090023694559932,
+      "link_auc": 0.6357114584736381
+    },
+    "1E w=5 (embedding, no link penalty)": {
+      "f1_gain_vs_1A": {
+        "mean_diff": -0.07487382874567428,
+        "ci_lo": -0.13400601570390944,
+        "ci_hi": -0.015741641787439115,
+        "dz": -1.058578931946406,
+        "wins": 0,
+        "n": 8,
+        "t_p": 0.020108919739115255,
+        "w_p": 0.0078125
+      },
+      "ap_gain_vs_1A": {
+        "mean_diff": -0.02824261486621559,
+        "ci_lo": -0.06387839419534154,
+        "ci_hi": 0.0073931644629103566,
+        "dz": -0.6625761342726799,
+        "wins": 2,
+        "n": 8,
+        "t_p": 0.10306314351684018,
+        "w_p": 0.1484375
+      },
+      "sil_train": 0.4185273014008999,
+      "sil_test": -0.03611305762024131,
+      "link_auc": 0.5876684902782634
+    },
+    "1B (constraint)": {
+      "f1_gain_vs_1A": {
+        "mean_diff": 0.0741037833145695,
+        "ci_lo": 0.0436002160661037,
+        "ci_hi": 0.1046073505630353,
+        "dz": 2.0309858423529388,
+        "wins": 8,
+        "n": 8,
+        "t_p": 0.0007023778948609165,
+        "w_p": 0.0078125
+      },
+      "ap_gain_vs_1A": {
+        "mean_diff": 0.11761278969377721,
+        "ci_lo": 0.0864067530292763,
+        "ci_hi": 0.14881882635827812,
+        "dz": 3.150888845397234,
+        "wins": 8,
+        "n": 8,
+        "t_p": 4.546821754583544e-05,
+        "w_p": 0.0078125
+      },
+      "sil_train": 0.30417050793766975,
+      "sil_test": -0.002523020200897008,
+      "link_auc": 0.6123247591817951
+    }
+  },
+  "1B_vs_1E_w5_f1": {
+    "mean_diff": 0.1489776120602438,
+    "ci_lo": 0.09072973569879428,
+    "ci_hi": 0.2072254884216933,
+    "dz": 2.138247921073207,
+    "wins": 8,
+    "n": 8,
+    "t_p": 0.0005170464268708191,
+    "w_p": 0.0078125
+  }
+}

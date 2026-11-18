@@ -1,0 +1,13 @@
+fold,comparison,metric,mean_diff,ci_lo,ci_hi,wins,n,w_p
+"fold A (train 1-19, test 25-34)",1B minus 1A,F1 @validated,-0.0099,-0.0281,0.0082,3,8,0.5469
+"fold A (train 1-19, test 25-34)",1B minus 1A,Average precision,0.0454,0.0187,0.0721,8,8,0.0078
+"fold A (train 1-19, test 25-34)",1B minus Node-only,F1 @validated,-0.0488,-0.0737,-0.0239,0,8,0.0078
+"fold A (train 1-19, test 25-34)",1B minus Node-only,Average precision,-0.0207,-0.0458,0.0045,3,8,0.1094
+"fold B (train 1-24, test 30-39)",1B minus 1A,F1 @validated,0.0366,0.012,0.0611,7,8,0.0234
+"fold B (train 1-24, test 30-39)",1B minus 1A,Average precision,0.1059,0.0497,0.162,7,8,0.0156
+"fold B (train 1-24, test 30-39)",1B minus Node-only,F1 @validated,0.0256,-0.0107,0.0618,6,8,0.1484
+"fold B (train 1-24, test 30-39)",1B minus Node-only,Average precision,0.1632,0.0898,0.2366,8,8,0.0078
+"main split (train 1-29, test 35-49)",1B minus 1A,F1 @validated,0.0741,0.0436,0.1046,8,8,0.0078
+"main split (train 1-29, test 35-49)",1B minus 1A,Average precision,0.1176,0.0864,0.1488,8,8,0.0078
+"main split (train 1-29, test 35-49)",1B minus Node-only,F1 @validated,0.0836,0.0441,0.123,8,8,0.0078
+"main split (train 1-29, test 35-49)",1B minus Node-only,Average precision,0.1918,0.1414,0.2421,8,8,0.0078

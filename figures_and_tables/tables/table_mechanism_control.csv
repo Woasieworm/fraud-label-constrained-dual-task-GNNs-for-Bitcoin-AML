@@ -1,0 +1,6 @@
+Arm,F1 @validated,Average precision,Gain over 1A (F1),Gain over 1A (AP),"Silhouette, train nodes","Silhouette, test nodes",Link AUC
+1A (no constraint),0.5341 ± 0.0336,0.5305 ± 0.0208,reference,reference,0.162,-0.067,0.697
+1S (shuffled labels),0.4970 ± 0.0329,0.5239 ± 0.0254,"-0.0371 (CI -0.0564 to -0.0177), wins 0/8, p 0.0078","-0.0066 (CI -0.0358 to +0.0227), wins 4/8",0.153,-0.073,0.625
+"1E w=1 (embedding, no link penalty)",0.5101 ± 0.0244,0.5474 ± 0.0266,"-0.0240 (CI -0.0638 to +0.0159), wins 2/8, p 0.2500","+0.0169 (CI -0.0081 to +0.0420), wins 6/8",0.427,-0.031,0.636
+"1E w=5 (embedding, no link penalty)",0.4592 ± 0.0385,0.5023 ± 0.0438,"-0.0749 (CI -0.1340 to -0.0157), wins 0/8, p 0.0078","-0.0282 (CI -0.0639 to +0.0074), wins 2/8",0.419,-0.036,0.588
+1B (constraint),0.6082 ± 0.0354,0.6481 ± 0.0208,"+0.0741 (CI +0.0436 to +0.1046), wins 8/8, p 0.0078","+0.1176 (CI +0.0864 to +0.1488), wins 8/8",0.304,-0.003,0.612

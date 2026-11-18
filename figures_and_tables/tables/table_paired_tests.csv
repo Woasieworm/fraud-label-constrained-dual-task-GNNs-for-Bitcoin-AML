@@ -1,0 +1,15 @@
+split,comparison,metric,mean_diff,ci_lo,ci_hi,dz,wins,n,t_p,w_p,w_p_holm
+temporal,1B minus 1A,F1 @0.5,0.1002,0.0681,0.1324,2.6047,8,8,0.0002,0.0078,0.0234
+temporal,1B minus 1A,F1 @validated,0.0741,0.0436,0.1046,2.031,8,8,0.0007,0.0078,0.0234
+temporal,1B minus 1A,Average precision,0.1176,0.0864,0.1488,3.1509,8,8,0.0,0.0078,0.0234
+temporal,1B minus 1A,Link AUC,-0.0842,-0.0974,-0.0711,-5.3579,0,8,0.0,0.0078,
+temporal,1B minus Node-only,F1 @0.5,0.0339,-0.0061,0.0739,0.7092,5,8,0.0849,0.1484,
+temporal,1B minus Node-only,F1 @validated,0.0836,0.0441,0.123,1.7702,8,8,0.0016,0.0078,
+temporal,1B minus Node-only,Average precision,0.1918,0.1414,0.2421,3.1852,8,8,0.0,0.0078,
+temporal,1A minus Node-only,F1 @0.5,-0.0663,-0.113,-0.0197,-1.1891,1,8,0.012,0.0391,
+temporal,1A minus Node-only,F1 @validated,0.0095,-0.0318,0.0507,0.1914,5,8,0.6051,0.6406,
+temporal,1A minus Node-only,Average precision,0.0741,0.0192,0.1291,1.128,8,8,0.0153,0.0078,
+random,1B minus 1A,F1 @0.5,-0.0206,-0.0334,-0.0077,-1.3358,1,8,0.0069,0.0234,
+random,1B minus 1A,F1 @validated,0.0037,-0.0064,0.0138,0.3078,4,8,0.4129,0.4609,
+random,1B minus 1A,Average precision,0.0059,0.0018,0.0099,1.2096,7,8,0.0111,0.0234,
+random,1B minus 1A,Link AUC,-0.0515,-0.0574,-0.0457,-7.4003,0,8,0.0,0.0078,

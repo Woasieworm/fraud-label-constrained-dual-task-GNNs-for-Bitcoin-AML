@@ -1,0 +1,11 @@
+Window,Model,F1 @validated,Illicit nodes (last model),Labelled nodes
+steps 35-42,Node-only,0.6037 ± 0.0150,914,9983
+steps 35-42,1A,0.6451 ± 0.0357,914,9983
+steps 35-42,1B,0.6961 ± 0.0356,914,9983
+steps 35-42,Random forest,0.8962 ± 0.0037,914,9983
+steps 35-42,1B minus 1A,"+0.0510 (95% CI +0.0220 to +0.0800), wins 8/8, Wilcoxon p=0.0078",,
+steps 43-49,Node-only,0.0182 ± 0.0064,169,6687
+steps 43-49,1A,0.0351 ± 0.0165,169,6687
+steps 43-49,1B,0.0233 ± 0.0097,169,6687
+steps 43-49,Random forest,0.0283 ± 0.0012,169,6687
+steps 43-49,1B minus 1A,"-0.0118 (95% CI -0.0276 to +0.0040), wins 3/8, Wilcoxon p=0.1484",,
