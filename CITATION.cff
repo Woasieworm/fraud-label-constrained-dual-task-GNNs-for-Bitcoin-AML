@@ -1,13 +1,15 @@
 cff-version: 1.2.0
 message: "If you use this code or the results, please cite it as below."
 title: "Fraud-Label Constrained Dual-Task Graph Neural Networks for Bitcoin Anti-Money Laundering: code and results"
+version: 1.0.1
+doi: 10.5281/zenodo.24355989
 type: software
 authors:
   - family-names: Adjei
     given-names: Gilbert Woasieworm
     affiliation: "University of Ghana"
 repository-code: "https://github.com/Woasieworm/fraud-label-constrained-dual-task-GNNs-for-Bitcoin-AML"
-date-released: "2026-11-18"
+date-released: "2026-11-19"
 keywords:
   - graph neural networks
   - anti-money laundering
