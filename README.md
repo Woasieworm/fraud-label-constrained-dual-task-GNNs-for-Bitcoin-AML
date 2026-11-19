@@ -1,6 +1,7 @@
 # Fraud-Label Constrained Dual-Task Graph Neural Networks for Bitcoin Anti-Money Laundering
+[![DOI](https://zenodo.org/badge/1463429574.svg)](https://doi.org/10.5281/zenodo.24355989)
 
-Code, results and figures for the MPhil Data Science thesis of Gilbert Woasieworm Adjei, University of Ghana. Supervisor: Dr. Alvin Prince Ansah.
+Code, results, and figures for the MPhil Data Science thesis of Gilbert Woasieworm Adjei, University of Ghana. Supervisor: Dr. Alvin Prince Ansah.
 
 The thesis tests whether a fraud-label constraint improves a dual-task GraphSAGE model (node classification plus link prediction) for detecting illicit transactions in the Elliptic Bitcoin dataset. All experiments run on the complete graph (203,769 nodes, 234,355 edges, 49 time steps).
 
@@ -8,7 +9,7 @@ The thesis tests whether a fraud-label constraint improves a dual-task GraphSAGE
 
 | Path | What it holds |
 |---|---|
-| `notebook/elliptic-aml-dual-task-gnn.ipynb` | The single notebook that produces every number, figure and table in Chapter 4. |
+| `notebook/elliptic-aml-dual-task-gnn.ipynb` | The single notebook that produces every number, figure, and table in Chapter 4. |
 | `results/thesis_results.json` | All results from the run, including per-seed values, paired tests, audit, weight sweep and rolling folds. |
 | `results/thesis_results_control.json` | Mechanism control experiment (Section 4.10). |
 | `figures_and_tables/` | Figures (PNG) and tables (CSV) exported by the notebook. |
@@ -30,11 +31,11 @@ The Elliptic dataset is not redistributed here. Download it (Weber et al., 2019,
 3. Check that `DRY_RUN = False`. Setting it to `True` runs a short test with two seeds and 15 epochs.
 4. Run all cells. The first cell installs `torch-geometric` and `scikit-learn` at the pinned versions.
 
-The notebook writes the results JSON files, figures, tables and model weights at the end.
+The notebook writes the results JSON files, figures, tables, and model weights at the end.
 
 ## Recorded environment
 
-Python 3.13.16, CUDA 13.0, Tesla T4 on Google Colab, torch 2.14.1+cu130, torch-geometric 2.6.1, scikit-learn 1.5.2, numpy 2.4.6, pandas 2.2.3, scipy 1.16.3. Deterministic algorithms were enabled. The run exported on 2026-11-14.
+Python 3.13.16, CUDA 13.0, Tesla T4 on Google Colab, torch 2.14.1+cu130, torch-geometric 2.6.1, scikit-learn 1.5.2, numpy 2.4.6, pandas 2.2.3, scipy 1.16.3. Deterministic algorithms were enabled. The run was exported on 2026-11-14.
 
 ## Reproducibility notes
 
@@ -52,7 +53,7 @@ Python 3.13.16, CUDA 13.0, Tesla T4 on Google Colab, torch 2.14.1+cu130, torch-g
 | Option 1B | 0.6082 | 0.6481 | 0.6123 |
 | Random forest | 0.8008 | 0.7861 | none |
 
-Option 1B beats Option 1A in all eight seeds on all three performance metrics, at a cost of 0.084 in link AUC. The gain is concentrated before step 43, and under the random split the constraint does not help. A random forest on the same features beats every graph model. Full details are in Chapter 4 of the thesis and in `results/`.
+Option 1B beats Option 1A in all eight seeds on all three performance metrics, at a cost of 0.084 in link AUC. The gain is concentrated before step 43, and under the random split, the constraint does not help. A random forest on the same features beats every graph model. Full details are in Chapter 4 of the thesis and in `results/`.
 
 ## Citation
 
