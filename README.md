@@ -56,7 +56,7 @@ Option 1B beats Option 1A in all eight seeds on all three performance metrics, a
 
 ## Citation
 
-See `CITATION.cff`
+Adjei, G. W. (2026). Fraud-label constrained dual-task graph neural networks for Bitcoin anti-money laundering: code and results (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.24355990
 
 ## References
 
