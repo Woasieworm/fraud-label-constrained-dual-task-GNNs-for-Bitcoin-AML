@@ -16,6 +16,27 @@ The thesis tests whether a fraud-label constraint improves a dual-task GraphSAGE
 | `models/` | Saved weights for Options 1A and 1B on both splits (seed 42). |
 | `requirements.txt` | Package versions of the recorded run. |
 
+## File guide
+
+| Path | What it holds |
+|---|---|
+| `models/model_option1a.pt`, `models/model_option1b.pt` | Saved weights for Options 1A and 1B, random split, seed 42 |
+| `models/model_option1a_temporal.pt`, `models/model_option1b_temporal.pt` | Saved weights for Options 1A and 1B, temporal split, seed 42 |
+| `figures_and_tables/tables/table_main_temporal.csv` | Main results, temporal split |
+| `figures_and_tables/tables/table_main_random.csv` | Main results, random split |
+| `figures_and_tables/tables/table_paired_tests.csv` | Paired comparisons among models: mean difference, confidence interval, seed wins and tests |
+| `figures_and_tables/tables/table_pipeline_audit.csv` | Pipeline audit: apparent against true gain |
+| `figures_and_tables/tables/table_mechanism.csv` | Constraint mechanism analysis |
+| `figures_and_tables/tables/table_mechanism_control.csv` | Mechanism control experiments |
+| `figures_and_tables/tables/table_lambda_temporal.csv` | Constraint weight sweep, temporal split |
+| `figures_and_tables/tables/table_dose_response.csv` | Dose-response results |
+| `figures_and_tables/tables/table_time_windows.csv` | Results by test time window |
+| `figures_and_tables/tables/table_rolling_folds.csv` | Results by rolling fold |
+| `figures_and_tables/tables/table_rolling_folds_paired.csv` | Paired comparisons by rolling fold |
+| `figures_and_tables/tables/per_step_label_counts.csv` | Label counts per time step |
+| `figures_and_tables/tables/evidence_table.csv` | Summary of evidence for each claim |
+| `figures_and_tables/*.png` | Figures exported by the notebook, named by content |
+
 ## Data
 
 The Elliptic dataset is not redistributed here. Download it (Weber et al., 2019, published by Elliptic on Kaggle as "Elliptic Data Set") and place these three files in one folder:
@@ -54,6 +75,10 @@ Python 3.13.16, CUDA 13.0, Tesla T4 on Google Colab, torch 2.14.1+cu130, torch-g
 | Random forest | 0.8008 | 0.7861 | none |
 
 Option 1B beats Option 1A in all eight seeds on all three performance metrics, at a cost of 0.084 in link AUC. The gain is concentrated before step 43, and under the random split, the constraint does not help. A random forest on the same features beats every graph model. Full details are in Chapter 4 of the thesis and in `results/`.
+
+## Licence
+
+The code, including the notebook, is released under the MIT Licence (see `LICENSE`). The results, tables, figures and saved model weights (`results/`, `figures_and_tables/`, `models/`) are released under the Creative Commons Attribution 4.0 International licence (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/. The Elliptic dataset is not covered by either licence and remains subject to its own terms.
 
 ## Citation
 
