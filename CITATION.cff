@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this code or the results, please cite it as below."
 title: "Fraud-Label Constrained Dual-Task Graph Neural Networks for Bitcoin Anti-Money Laundering: code and results"
 version: 1.0.1
-doi: 10.5281/zenodo.24355989
+doi: 10.5281/zenodo.24356225
 type: software
 authors:
   - family-names: Adjei
