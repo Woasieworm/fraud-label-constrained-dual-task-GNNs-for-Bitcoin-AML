@@ -45,6 +45,8 @@ The Elliptic dataset is not redistributed here. Download it (Weber et al., 2019,
 - `elliptic_txs_edgelist.csv`
 - `elliptic_txs_classes.csv`
 
+The Elliptic Data Set is distributed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International licence (https://creativecommons.org/licenses/by-nc-nd/4.0/). It is not redistributed here, and it is not covered by the licences in the Licence section.
+
 ## Reproducing the run
 
 1. Open the notebook in Google Colab and select a GPU runtime. The recorded run used a Tesla T4.
